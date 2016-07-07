@@ -18,21 +18,21 @@ When you have a program that generates this pattern, define a variable size = 8 
 
 ****/
 
-var output=""; //declare variable to store the displayed output
-for(var i=0;i<8;i++){
-	for(var j=0; j<8;j++){
+var output = ""; //declare variable to store the displayed output
+for (var i = 0; i < 8; i++) {
+    for (var j = 0; j < 8; j++) {
 
-    //checks to make sure the sum of the roll(i)and column(j) is odd and assign " "
-		if((i+j)% 2 ===0){
-		output+=" ";
-		}
+        //checks to make sure the sum of the roll(i)and column(j) is odd and assign " "
+        if ((i + j) % 2 === 0) {
+            output += " ";
+        }
 
-    //if even
-		else{
-			output+="#";
-		}
-	}
-	output+="\n"; //add newline to go to next row
+        //if even
+        else {
+            output += "#";
+        }
+    }
+    output += "\n"; //add newline to go to next row
 }
 
 console.log(output); //displays output
